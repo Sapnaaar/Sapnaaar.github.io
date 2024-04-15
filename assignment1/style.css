@@ -135,36 +135,53 @@ header {
     right: 2rem;
     
 } */
-
+/* -----------------------------------------pixel displacement screenshot----------------------------------------------- */
 .image5 {
-  width: 42%;
+  width: 31.5%;
   border-style: solid;
   position: relative;
   top: 1rem;
   left: 2rem;
 }
 .image4 {
-  width: 40%;
+  width: 30%;
   border-style: solid;
   position: relative;
   top: 1rem;
-  left: 5rem;
+  left: 3rem;
 }
 
+.image6 {
+  width: 32%;
+  border-style: solid;
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+}
+
+/* ------------------------------------------media reference screenshots----------------------------------------------------- */
 .example1 {
-  width: 25%;
+  width: 21%;
+  border-style: solid;
+  position: relative;
+  left: 2rem;
+}
+
+.example3 {
+  width: 30%;
+  border-style: solid;
+  position: relative;
+  left: 3rem;
+}
+
+.example4 {
+  width: 40%;
   border-style: solid;
   position: relative;
   left: 4rem;
 }
 
-.example3 {
-  width: 35.5%;
-  border-style: solid;
-  position: relative;
-  left: 7rem;
-}
-
+/* ---------------------------------------------text animation screenshots------------------------------------------ */
 .effect1 {
   width: 30%;
   border-style: solid;
@@ -185,3 +202,4 @@ header {
   position: relative;
   left: 3rem;
 }
+/* -------------------------------------------------------------------------------------------------------------------- */
