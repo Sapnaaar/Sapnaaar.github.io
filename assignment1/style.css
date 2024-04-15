@@ -40,7 +40,7 @@ p {
   font-weight: 600;
   color: rgb(0, 0, 0);
   padding-bottom: 10px;
-  width: 85%;
+  width: 75%;
 }
 
 /* changing to white */
@@ -98,9 +98,90 @@ header {
 }
 
 .image1 {
-  width: 35rem;
+  /* width: 35rem; */
+  width: 30%;
+  border-style: solid;
+  margin-right: 1rem;
 }
 
 .image2 {
-  width: 35rem;
+  /* width: 37rem; */
+  width: 32%;
+  border-style: solid;
+  margin-right: 1rem;
+}
+
+.image3 {
+  width: 33%;
+  border-style: solid;
+}
+/* When playing around with image sizing I first attempted to size it by using pixels and rem, however it once again made me realise that its very relative to screen dimensions and that the ratio from text to image to background can be different on varying screens, and eventually I realised % was the most effective way to size the image as the proportions and ratio stay the same on varying screen sizes */
+
+/* .pixel {
+    width: 60%;
+} */
+
+/* .pixel {
+    width: 60%;
+    
+} */
+
+/* .image4 {
+    float: right;
+    width: 40%;
+    border-style: solid;
+    position: relative;
+    top: 2rem;
+    right: 2rem;
+    
+} */
+
+.image5 {
+  width: 42%;
+  border-style: solid;
+  position: relative;
+  top: 1rem;
+  left: 2rem;
+}
+.image4 {
+  width: 40%;
+  border-style: solid;
+  position: relative;
+  top: 1rem;
+  left: 5rem;
+}
+
+.example1 {
+  width: 25%;
+  border-style: solid;
+  position: relative;
+  left: 4rem;
+}
+
+.example3 {
+  width: 35.5%;
+  border-style: solid;
+  position: relative;
+  left: 7rem;
+}
+
+.effect1 {
+  width: 30%;
+  border-style: solid;
+  position: relative;
+  left: 1rem;
+}
+
+.effect2 {
+  width: 30%;
+  border-style: solid;
+  position: relative;
+  left: 2rem;
+}
+
+.effect3 {
+  width: 28.5%;
+  border-style: solid;
+  position: relative;
+  left: 3rem;
 }
