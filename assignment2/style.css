@@ -1,10 +1,10 @@
 :root {
-  --primary-bg-color: #070404;
+  --primary-bg-color: #000000;
   /* colour: #f4f4f4 */
   --text-color: #ffffff;
   --main-bg-color: #683e3e;
   --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --main-btn-bg-color: #c1aeae;
 }
 
 body,
@@ -135,4 +135,12 @@ h1 {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 2.7rem;
+}
+
+/* added 20 pixels of padding to the top so that the icon was not too close to the media controls */
+
+.post {
+  padding-top: 20px;
+  color: #000000;
 }

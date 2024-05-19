@@ -25,10 +25,10 @@
 // const myImg = document.querySelector("#cat-image");
 // console.log(myImg);
 
-const myButton = document.querySelector("#my-button");
-console.log(myButton);
+// const myButton = document.querySelector("#my-button");
+// console.log(myButton);
 
-myButton.addEventListener("click", toggleMe);
+// myButton.addEventListener("click", toggleMe);
 
 // function toggleMe() {
 //   const myImg = document.querySelector("#cat-image");
@@ -58,4 +58,17 @@ function chooseTopic() {
       item.classList.add("lime-box");
     }
   }
+}
+
+const myImg = document.querySelector("#cat-image");
+
+myImg.addEventListener("mouseover", makeItRound);
+myImg.addEventListener("mouseout", makeItSquare);
+
+function makeItRound() {
+  myImg.classList.add("round");
+}
+
+function makeItSquare() {
+  myImg.classList.add("square");
 }
