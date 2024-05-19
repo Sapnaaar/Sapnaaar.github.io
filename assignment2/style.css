@@ -7,7 +7,56 @@
   --main-btn-bg-color: #c1aeae;
 }
 
-body,
+Changed
+  the
+  primary
+  background
+  colour
+  to
+  black
+  and
+  the
+  main
+  background
+  colour
+  (header and footer)
+  to
+  a
+  shade
+  of
+  maroon,
+as
+  I
+  believed
+  the
+  bright
+  purple/pink
+  colours
+  from
+  the
+  music
+  video
+  worked
+  well
+  with
+  much
+  distinctly
+  darker
+  colours
+  such
+  as
+  maroon
+  and
+  black
+  and
+  offered
+  a
+  visually
+  pleasing
+  complementation
+  of
+  colours.
+  body,
 h1,
 p,
 ul {
@@ -140,7 +189,11 @@ h1 {
 
 /* added 20 pixels of padding to the top so that the icon was not too close to the media controls */
 
-.post {
-  padding-top: 20px;
-  color: #000000;
+#heart-button {
+  padding-top: 10px;
+  background-color: #000000;
+}
+
+img#heart-img {
+  outline: none !important;
 }

@@ -20,21 +20,21 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>The Nebula Groove</h1>
     </header>
 
     <!-- Navigation Section -->
 
     <!-- making UL white -->
-    <nav>
+    <!-- <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Videos</a></li>
         <li><a href="#">Music</a></li>
         <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
+        
       </ul>
-    </nav>
+    </nav> -->
 
     <!-- Main Content Section -->
     <main class="container">
@@ -46,6 +46,22 @@
             type="video/mp4"
           />
         </video>
+
+        <!-- Below are the functions for the main interactive elements of the media
+          player which involve the play/pause, rewind and fast-forward, replay,
+          mute/ un mute and full screen button options. These were vital for the
+          site as they are key and prominent features for media players in order
+          to allow users to watch the media and also be able to customise the
+          experience according to their preferences. I placed the play/pause
+          button first for it to be the “first” and main option the user can
+          interact with, whilst the rewind and fast-forward buttons are placed
+          next to do it as other predominant features the user can utilise
+          whilst watching the media itself. The remaining buttons replay,
+          mute/un-mute and full screen are then placed on the right side of the
+          progress bar where I placed the replay button first so that it can
+          visually be the first option that users consider in order to replay
+          and continue consuming the media. -->
+
         <div class="custom-controls">
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
@@ -56,7 +72,46 @@
               height="24"
             />
           </button>
-          <!-- replay button -------------------------------------------------------------->
+
+          <button id="heart-button">
+            <img
+              id="heart-img"
+              src="heart-outlined.png"
+              alt="heart icon"
+              width="46"
+              height="42"
+              style="outline-color: black"
+            />
+          </button>
+
+          <!-- rewind button------------------------------------------ -->
+          <button id="rewind-button">
+            <img
+              id="rewind-img"
+              src="https://img.icons8.com/ios-glyphs/30/rewind.png"
+              alt="rewind"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <!-- fast forward button------------------------------->
+          <button id="fast-forward-button">
+            <img
+              id="fast-forward-img"
+              src="https://img.icons8.com/ios-glyphs/30/fast-forward.png"
+              alt="fast forward"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <!-- progress bar -->
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div>
+
+          <!-- replay button -->
           <button id="replay-button">
             <img
               id="replay-img"
@@ -65,14 +120,7 @@
               width="24"
               height="24"
             />
-
-            <!-- ---------------------------------------------------------------------- -->
           </button>
-
-          <!-- progress bar -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
 
           <!-- volume control button -->
           <button id="mute-unmute-button">
@@ -95,11 +143,49 @@
               height="24"
             />
           </button>
+
+          <!-- This is the original feature I have attempted to add-in to this
+            media player. The feature is a like/favourite option where a user
+            can like and/or favourite the video upon viewing. This was my chosen
+            feature as it involves a sense of community and engagement between
+            the artist of the music video and the audience as it allows the
+            audience to show their support and appreciation through the like
+            feature, informing the artists through numbers on how many viewers
+            have liked and favourited the video -->
+
+          <!-- <button id="heart-button">
+            <img
+              id="heart-img"
+              src="heart-outlined.png"
+              alt="heart icon"
+              width="46"
+              height="42"
+              style="outline-color: black"
+            />
+          </button> -->
         </div>
+        <div id="message"></div>
       </div>
 
-      <div class="heart">
-        <!-- <button id="heart-button "> -->
+      <!-- Below is a previously failed attempt at the heart button. I am still not
+        entirely sure why the code did not work but I decided to re-do by
+        approaching it differently. I had initially watched youtube tutorials
+        and articles which suggested using ‘getelementById in the javascript
+        code and code the icons to change upon a click, however when I had
+        attempted this one of the icons did not appear upon click and after
+        numerous tries I was not able to solve the problem. So instead I changed
+        the approach and programmed it to be more similar to what we had learnt
+        in class by just using ‘const heartImg’ in the javascript code and
+        linking the image through that. In the second approach I also made sure
+        to rename the image files to ‘heart-outlined’ and ‘heart-filled’ to make
+        it simpler and less convoluted. It ended up being a success in the end,
+        although I’m still unsure about where it went wrong in the first attempt
+        I believe it was wise to start over with a slightly different and more
+        familiar approach - (refer to javascript file for the previous and now final attempts)-->
+
+      <!-- og button---------------------------------------------------------------------------------------------- -->
+      <!-- <div class="heart">
+        <button id="heart-button ">
         <img
           id="heartImage"
           onclick="changeImage()"
@@ -108,20 +194,14 @@
           width="40"
           height="40"
         />
+        </button>  -->
 
-      <!-- </button> -->
+      <!-- Fake Artist bio section -->
 
-        <!-- <div class="post-ratings-container">
-          <span class="post-rating-button material-icons">heart</span>
-          <span class="post-rating-count">0</span>
-        </div>
-      </div> -->
-
-      <!-- Additional Content Section -->
-
-      <!-- Artist bio section -->
+      <!-- Here I created a fake artist bio section to make the page look less empty
+      and more representative of what an actual artist page could look like -->
       <section>
-        <h2>The Nebula Groove</h2>
+        <h2>Brand new music by The Nebula Groove!</h2>
         <p>
           Hailing from the cosmic realms, The Nebula Groove is an electrifying
           force in the music scene. Their intergalactic blend of funk, jazz, and
@@ -134,16 +214,16 @@
         <!-- Add more content as needed -->
       </section>
 
-      <h2>Leave a comment!</h2>
-    </main>
+      <h2></h2>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-    </footer>
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+        <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+        <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+      </footer>
+    </main>
   </body>
 </html>
