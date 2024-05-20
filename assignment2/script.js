@@ -4,7 +4,7 @@ const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 video.removeAttribute("controls");
 
-// play pause button
+// play pause button------------------------------------------------------------------------------------------------------------
 video.addEventListener("timeupdate", updateProgressBar);
 function togglePlayPause() {
   if (video.paused || video.ended) {
@@ -20,7 +20,7 @@ function updateProgressBar() {
   progressBar.style.width = value + "%";
 }
 
-// replay button
+// replay button-------------------------------------------------------------------------------------------------------------------
 
 const replayButton = document.querySelector("#replay-button");
 console.log(replayButton);
@@ -36,7 +36,9 @@ function replayVideo() {
   playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
 
-// Mute unmute button
+// Mute unmute button---------------------------------------------------------------------------------------------------------------
+
+// For the mute/un-mute button I decided to have 2 visual cues to indicate change when a user decides to interact with the button to mute it. To do this I have chosen to change the icon upon clicking to change to a no-audio icon, and to further add to this I also decided to change the colour of the icon slightly when its muted to indicate that the audio is muted and out of play.
 
 const muteUnmuteButton = document.querySelector("#mute-unmute-button");
 console.log(muteUnmuteButton);
@@ -59,7 +61,7 @@ function toggleSound() {
   }
 }
 
-// Full screen button
+// Full screen button------------------------------------------------------------------------------------------------------------
 
 const fullScreenButton = document.querySelector("#full-screen-button");
 console.log(fullScreenButton);
@@ -81,19 +83,9 @@ function toggleFullScreen() {
 //     document.exitFullscreen();
 //   }
 
-//   I had initially done document.requestFullscreen instead of video.requestFullscreen which resulted in my code not working, however through research I was able to figure out my mistake
+//   I had initially done document.requestFullscreen instead of video.requestFullscreen which resulted in my code not working, and through research as well I was unable to solve the problem so I sought out chatgpt which located the error for me to fix and also helped me fix it.
 
-// --------------------------------------------------------------------------
-
-// Volume button
-// const volumeButton = document.querySelector("volume-button");
-// console.log(volumeButton);
-
-// volumeButton.addEventListener("click", toggleVolume);
-
-// function toggleVolume(){
-
-// like button------------------------------------------------------------------------
+// heart button---------------------------------------------------------------------------------------------------------------------
 const heartButton = document.querySelector("#heart-button");
 console.log(heartButton);
 
@@ -112,25 +104,7 @@ function toggleHeart() {
   }
 }
 
-function showMessage(message) {
-  messageDiv.textContent = message;
-}
-
-function clearMessage() {
-  messageDiv.textContent = "";
-}
-
-// having text pop up when favouriting the video
-const messageDiv = document.querySelector("#message");
-console.log(message);
-
-heartButton.addEventListener("click", addToFavourites);
-
-function addToFavourites() {
-  messageDiv.textContent = "(video has been added to favourites!)";
-}
-
-// Originally I attempted to do it by using "document.getelementByiD" to link the images to javascript in order to to have an image switch upon a click - however I realised it didnt feel interactive since unlike a button the icon will not be able to indicate its clickable when the mouse hovers over it, and so as a result I decided to change the code and make it a button instead which has the function of changing icons when clicked by a UserActivation.
+// Originally I attempted to do it by using "document.getelementByiD" to link the images to javascript in order to to have an image switch upon a click (source: https://stackoverflow.com/questions/55442477/make-text-appear-disappear-on-button-click_) however I realised it didnt feel interactive as when I attempted it the button icon was not  able to indicate that its clickable when the mouse hovers over it, and so as a result I decided to change the code and make it a button instead which has the function of changing icons when clicked by a UserActivation.
 
 // function changeImage() {
 //   if (
@@ -144,7 +118,28 @@ function addToFavourites() {
 //   }
 // }
 
-// rewind and fast forward button
+// having text pop up when favouriting the video-------------------------------------------------------------------------------------
+// const messageDiv = document.querySelector("#message");
+// console.log(message);
+
+// heartButton.addEventListener("click", addToFavourites);
+
+// function addToFavourites() {
+//   messageDiv.textContent = "(video has been added to favourites!)";
+// }
+
+// other attempts:
+// Here I attempted to code it so that the message is cleared if the user un-favourites the heart icon however this attempt did not work and I was also not able to fix the problem.
+
+function showMessage(message) {
+  messageDiv.textContent = message;
+}
+
+function clearMessage() {
+  messageDiv.textContent = "";
+}
+
+// rewind and fast forward button----------------------------------------------------------------------------------------------------
 const rewindButton = document.querySelector("#rewind-button");
 const fastForwardButton = document.querySelector("#fast-forward-button");
 
@@ -158,3 +153,5 @@ function rewindVideo() {
 function fastForwardVideo() {
   video.currentTime += 15;
 }
+
+// external source which helped with this code: https://stackoverflow.com/questions/73404753/how-to-add-a-5-sec-rewind-and-fast-forward-buttons-to-html5-audio-player
