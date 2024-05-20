@@ -2,61 +2,18 @@
   --primary-bg-color: #000000;
   /* colour: #f4f4f4 */
   --text-color: #ffffff;
-  --main-bg-color: #683e3e;
+  --main-bg-color: #875555;
   --main-text-color: #fff;
   --main-btn-bg-color: #c1aeae;
 }
 
-Changed
-  the
-  primary
-  background
-  colour
-  to
-  black
-  and
-  the
-  main
-  background
-  colour
-  (header and footer)
-  to
-  a
-  shade
-  of
-  maroon,
-as
-  I
-  believed
-  the
-  bright
-  purple/pink
-  colours
-  from
-  the
-  music
-  video
-  worked
-  well
-  with
-  much
-  distinctly
-  darker
-  colours
-  such
-  as
-  maroon
-  and
-  black
-  and
-  offered
-  a
-  visually
-  pleasing
-  complementation
-  of
-  colours.
-  body,
+/* Changed the primary background colour to black and the main background 
+colour (header and footer) to a shade of maroon, as I believed the 
+bright purple/pink colours from the music video worked well with much 
+distinctly darker colours such as maroon and black and offered a visually
+pleasing complementation of colours. */
+
+body,
 h1,
 p,
 ul {
@@ -88,7 +45,7 @@ body {
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  padding: 50px 0;
+  padding: 40px 0;
   /* changed padding to be thickersince I wanted it to be more visually prominent to showcase a title */
   text-align: center;
   width: 100%;
@@ -119,6 +76,7 @@ nav a {
 .media-player {
   width: 100%;
   margin: 0 auto;
+  padding-top: 40;
 }
 
 .media-player video {
@@ -196,4 +154,13 @@ h1 {
 
 img#heart-img {
   outline: none !important;
+}
+
+#message {
+  font-size: small;
+  color: #c1aeae;
+}
+
+.media-player {
+  padding-top: 30;
 }

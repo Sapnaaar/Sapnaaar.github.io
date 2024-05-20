@@ -94,16 +94,6 @@ heartButton.addEventListener("click", toggleHeart);
 const heartImg = document.querySelector("#heart-img");
 console.log(heartImg);
 
-function toggleHeart() {
-  if (heartImg.src.match("heart-outlined.png")) {
-    heartImg.src = "heart-filled.png";
-    showMessage("Video has been added to favourites!");
-  } else {
-    heartImg.src = "heart-outlined.png";
-    clearMessage();
-  }
-}
-
 // Originally I attempted to do it by using "document.getelementByiD" to link the images to javascript in order to to have an image switch upon a click (source: https://stackoverflow.com/questions/55442477/make-text-appear-disappear-on-button-click_) however I realised it didnt feel interactive as when I attempted it the button icon was not  able to indicate that its clickable when the mouse hovers over it, and so as a result I decided to change the code and make it a button instead which has the function of changing icons when clicked by a UserActivation.
 
 // function changeImage() {
@@ -118,15 +108,25 @@ function toggleHeart() {
 //   }
 // }
 
+function toggleHeart() {
+  if (heartImg.src.match("heart-outlined.png")) {
+    heartImg.src = "heart-filled.png";
+    // showMessage("Video has been added to favourites!");
+  } else {
+    heartImg.src = "heart-outlined.png";
+    // clearMessage();
+  }
+}
+
 // having text pop up when favouriting the video-------------------------------------------------------------------------------------
-// const messageDiv = document.querySelector("#message");
-// console.log(message);
+const messageDiv = document.querySelector("#message");
+console.log(message);
 
-// heartButton.addEventListener("click", addToFavourites);
+heartButton.addEventListener("click", addToFavourites);
 
-// function addToFavourites() {
-//   messageDiv.textContent = "(video has been added to favourites!)";
-// }
+function addToFavourites() {
+  messageDiv.textContent = "(video has been added to favourites!)";
+}
 
 // other attempts:
 // Here I attempted to code it so that the message is cleared if the user un-favourites the heart icon however this attempt did not work and I was also not able to fix the problem.
