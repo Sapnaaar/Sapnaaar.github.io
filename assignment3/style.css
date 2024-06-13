@@ -1,0 +1,15 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: azure;
+}
+
+body {
+  background-image: url(gallery.png);
+  height: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* --------------------------------------- */
+  display: flex;
+}
