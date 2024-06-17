@@ -1,15 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 3rem;
   text-align: center;
   color: azure;
+  /* margin-top: 2rem; */
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: azure;
+  /* margin-top: 2rem; */
+}
+
+h1,
+h2 {
+  font-family: "Della Respira", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  background-image: url(gallery.png);
-  height: 100;
+  background-image: url(gallery2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* --------------------------------------- */
-  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
+/* The body contains the main background image and I 
+implemented background-size,repeat and attachment settings
+ in order to make the background image static across 
+ varying types and sizes of screens */
+
+.slider-container-2 {
+  overflow: hidden;
+  width: 100%;
+  max-width: 2200px;
+  margin-top: 80px;
+  /* adjust margin top to adjust placement of slider */
+  position: relative;
+  margin: 25px auto;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slide {
+  min-width: 40%;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 20px;
+  margin-left: 30%;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-button,
+#right-button {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* .image {
+  position: relative;
+  width: 900px;
+} */
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+/* .image-overlay:hover {
+  opacity: 1;
+} */
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* java hover effect -----------------------------------------------------------------------*/
+/* .image-wrapper {
+  min-width: 40%;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 20px;
+  margin-left: 30%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+} */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* image slider buttons -----------------------------------------------------------------------*/
+
+/* .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev,
+.next {
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: coral;
+} */
+
+/* -------------------------------------------------------------------------------------------- */

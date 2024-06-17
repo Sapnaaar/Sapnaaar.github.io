@@ -9,19 +9,127 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+
     <span id="bgimage">
       <style></style>
     </span>
   </head>
+
+  <!-- <p>
+    My chosen context for this assignent is to create an online digital art
+    portfolio in the style of an art gallery. The main action I have chosen to
+    implement is scroll, where the main and initial idea was to create a looped
+    horizontal scroll image slider feature where all works are presented in the
+    form of a painting in a gallery. I had chosen horizontal scrolling since it
+    allows for the illusion of browsing paintings on the walls of an art gallery
+    and thus allowing a set background image/setting of an art gallery without
+    breaking away from that illusion. However after a few trials I had realised
+    the looped image carousel was unattainable for my level of skill without
+    directly copying the code from a guide, and so I decided to change my idea
+    slightly to make the execution simple whilst keeping the idea relatively
+    similar. 
+  </p> -->
+
+  <!-- <p>
+    The idea I have chosen to execute for this assignment is to create a
+    horizontal scroll image slider allowing users the option to horizontally
+    scroll through the gallery and view the works one by one and/or use
+    left/right arrow buttons that scrolls through images one at a time (similar
+    to the practice of browsing artworks in a physical gallery). In addition to
+    this I will also attempt implement hover effects that present the title of
+    the artwork and provides additional information of the works which can
+    further improve the user experience and make it more characteristic of a gallery.
+  </p> -->
+
   <body>
     <h1>DIGITAL PORTFOLIO</h1>
+    <h2>Sapna Rajesh</h2>
 
-    <div class="slider-container">
-      <div class="slider">
-        <img class="slide" src="frame1.png" alt="frame 1" />
-        <img class="slide" src="frame1.png" alt="frame 1" />
-        <img class="slide" src="frame1.png" alt="frame 1" />
-        <img class="slide" src="frame1.png" alt="frame 1" />
+    <!-- // image slider click button option -->
+
+    <!-- <div class="slider-container">
+      <div class="slider" id="slider1">
+        <img class="slide" src="frame1.png" alt="frame 1" id="image" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="prev" id="prev">prev</button>
+      <button class="next" id="next">next</button>
+    </div> -->
+
+    <!-- ---------------------------------------------------- -->
+    <p>
+      To begin I initially created a slider wrapper div class and within it I
+      created a slider container div class which will include all images and
+      buttons, and additionally I created a slider div class that only includes
+      images (in order to accurately target this when implementing scroll
+      effects in CSS)
+    </p>
+    <div class="slider-wrapper">
+      <div class="slider-container-2">
+        <div class="slider" id="slider2">
+          <div class="image-wrapper">
+            <img class="slide" src="frame1.png" id="image1" alt="frame 1" />
+            <div class="image-overlay">
+              <div class="image-title">Artwork title</div>
+              <p class="image-description">Additional information</p>
+            </div>
+          </div>
+
+          <img class="slide" src="frame1.png" id="image1" alt="frame 1" />
+
+          <img class="slide" src="frame2.png" id="image2" alt="frame 1" />
+          <img class="slide" src="frame3.png" id="image3" alt="frame 1" />
+          <img class="slide" src="frame4.png" id="image4" alt="frame 1" />
+          <img class="slide" src="frame5.png" id="image5" alt="frame 1" />
+          <img class="slide" src="frame7.png" id="image6" alt="frame 1" />
+          <img class="slide" src="frame8.png" id="image7" alt="frame 1" />
+
+          <img class="slide" src="frame1.png" id="image1" alt="frame 1" />
+          <img class="slide" src="frame2.png" id="image2" alt="frame 1" />
+          <img class="slide" src="frame3.png" id="image3" alt="frame 1" />
+          <img class="slide" src="frame4.png" id="image4" alt="frame 1" />
+          <img class="slide" src="frame5.png" id="image5" alt="frame 1" />
+          <img class="slide" src="frame7.png" id="image6" alt="frame 1" />
+          <img class="slide" src="frame8.png" id="image7" alt="frame 1" />
+
+          <img class="slide" src="frame1.png" id="image1" alt="frame 1" />
+          <img class="slide" src="frame2.png" id="image2" alt="frame 1" />
+          <img class="slide" src="frame3.png" id="image3" alt="frame 1" />
+          <img class="slide" src="frame4.png" id="image4" alt="frame 1" />
+          <img class="slide" src="frame5.png" id="image5" alt="frame 1" />
+          <img class="slide" src="frame7.png" id="image6" alt="frame 1" />
+          <img class="slide" src="frame8.png" id="image7" alt="frame 1" />
+        </div>
+
+        <div class="buttons">
+          <button id="left-button">
+            <img
+              id="left-img"
+              src="https://img.icons8.com/?size=100&id=c9zgMbLUUiDQ&format=png&color=000000"
+              alt="left"
+              width="40"
+              height="40"
+            />
+          </button>
+
+          <button id="right-button">
+            <img
+              id="right-img"
+              src="https://img.icons8.com/?size=100&id=lqqUep9rwXAE&format=png&color=000000"
+              alt="right"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </body>

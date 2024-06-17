@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="image">
+      <img class="image__img" src="frame1.png" alt="frame 1" />
+      <div class="image__overlay">
+        <div class="image__title">Artwork title</div>
+        <p class="image__description">Additional information</p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function scrolll() {
+      var left = document.querySelector(".slider");
+      left.scrollBy(600, 0);
+    }
+
+    function scrollr() {
+      var right = document.querySelector(".slider");
+      right.scrollBy(-600, 0);
+    }
+  </script>
+</html>

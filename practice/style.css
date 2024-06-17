@@ -1,0 +1,54 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: azure;
+  /* margin-top: 2rem; */
+  margin-top: 3%;
+}
+
+body {
+  background-image: url(gallery2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* --------------------------------------- */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.slider-container {
+  overflow: hidden;
+  /* width: 100%; */
+  width: 50%;
+  /* max-width: 2200px; */
+  /* margin-top: 200px;  */
+  /* adjust margin top to adjust placement of slider */
+  /* Initially I attempted to adjust margin with pixels, however I realised it varied from monitor to monitor depending on size and thus I changed it to percentage form in order for it to be consistent across all */
+  position: relative;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slide {
+  min-width: 40%;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+
+.image {
+  position: relative;
+  width: 400px;
+}
