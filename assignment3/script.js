@@ -7,7 +7,7 @@ leftButton.addEventListener("click", scrollLeft);
 function scrollLeft() {
   console.log("left clicked");
   var left = document.querySelector(".slider");
-  left.scrollBy(-1200, 0);
+  left.scrollBy(-1100, 0);
 }
 
 const rightButton = document.querySelector("#right-button");
@@ -17,7 +17,7 @@ rightButton.addEventListener("click", scrollRight);
 
 function scrollRight() {
   var right = document.querySelector(".slider");
-  right.scrollBy(1200, 0);
+  right.scrollBy(1100, 0);
 }
 
 // To code this I added a click eventlistener to both buttoms and
@@ -78,29 +78,4 @@ function scrollRight() {
 //     currentImage = 0;
 //   }
 //   imageTag.src = images[currentImage];
-// });
-
-// Select all image wrappers
-// const imageWrappers = document.querySelectorAll(".image-wrapper");
-
-// // Function to handle mouseover
-// function handleMouseOver(event) {
-//   const overlay = event.currentTarget.querySelector(".overlay");
-//   const image = event.currentTarget.querySelector("img");
-//   overlay.style.opacity = 1;
-//   image.style.filter = "brightness(50%)"; // Change brightness as an example
-// }
-
-// // Function to handle mouseout
-// function handleMouseOut(event) {
-//   const overlay = event.currentTarget.querySelector(".overlay");
-//   const image = event.currentTarget.querySelector("img");
-//   overlay.style.opacity = 0;
-//   image.style.filter = "brightness(100%)"; // Revert brightness change
-// }
-
-// // Add event listeners to each image wrapper
-// imageWrappers.forEach((wrapper) => {
-//   wrapper.addEventListener("mouseover", handleMouseOver);
-//   wrapper.addEventListener("mouseout", handleMouseOut);
 // });

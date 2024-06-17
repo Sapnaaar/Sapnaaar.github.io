@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -54,7 +60,7 @@ implemented background-size,repeat and attachment settings
   align-items: center;
 }
 
-/* Scroll settings */
+/* Scroll settings -----------------------------------------------------------------------------*/
 
 .slider {
   display: flex;
@@ -63,19 +69,13 @@ implemented background-size,repeat and attachment settings
   scrollbar-width: none;
 }
 
-.slide {
-  min-width: 40%;
-  box-sizing: border-box;
-  display: block;
-  margin-right: 20px;
-  margin-left: 30%;
-}
-
 .slider-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+/* Poistioning the buttons------------------------------------------------------------------------- */
 
 .buttons {
   display: flex;
@@ -91,79 +91,20 @@ implemented background-size,repeat and attachment settings
 }
 
 /*Hover overlay  ------------------------------------------------------------------------------------- */
-/* .image {
-  position: relative;
-  width: 900px;
-} */
 
-.slide {
-  display: block;
-  width: 100%;
-}
+/* I was initially struggling a lot with the hover effect as when 
+I attempted the image would change its size and position on screen 
+and I was still not able to properly identify the problem after various 
+tries. However I've concluded that I may have had a statement somewhere 
+that was overwritten regarding positioning of the image. To not risk any 
+further mistakes on my current code I decided to start over on a different
+ file and I started off by positioning the image first and programming 
+ the hover effects, and then duplicating it and adding in the scroll effects . 
+ Even though I still dont know the root of the initial problem, this approach 
+ allowed me to overlook and change my code accordingly in a reflective and 
+ evaluative manner */
 
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.image-wrapper img {
-  display: block;
-  width: 100%;
-  transition: filter 0.3s ease;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: aliceblue;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-
-/* .image-overlay:hover {
-  opacity: 1;
-} */
-
-.image-wrapper:hover .image-overlay {
-  opacity: 1;
-}
-
-.image-title {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-/* java hover effect -----------------------------------------------------------------------*/
-/* .image-wrapper {
-  min-width: 40%;
-  box-sizing: border-box;
-  display: block;
-  margin-right: 20px;
-  margin-left: 30%;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-} */
-
-/* --------------------------------------------------------------------------------------------- */
+/* hover effect--------------------------------------------------------------------------------------------- */
 
 .image {
   position: relative;
@@ -202,13 +143,13 @@ implemented background-size,repeat and attachment settings
   font-weight: bold;
 }
 
-.slider {
+/* .slider {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
   margin-top: 30px;
-}
+} */
 
 .image {
   min-width: 40%;
