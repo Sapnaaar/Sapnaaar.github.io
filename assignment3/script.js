@@ -7,7 +7,7 @@ leftButton.addEventListener("click", scrollLeft);
 function scrollLeft() {
   console.log("left clicked");
   var left = document.querySelector(".slider");
-  left.scrollBy(-800, 0);
+  left.scrollBy(-1200, 0);
 }
 
 const rightButton = document.querySelector("#right-button");
@@ -17,7 +17,7 @@ rightButton.addEventListener("click", scrollRight);
 
 function scrollRight() {
   var right = document.querySelector(".slider");
-  right.scrollBy(800, 0);
+  right.scrollBy(1200, 0);
 }
 
 // To code this I added a click eventlistener to both buttoms and

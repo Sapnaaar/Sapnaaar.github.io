@@ -9,7 +9,7 @@ h1 {
   text-align: center;
   color: azure;
   /* margin-top: 2rem; */
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 h2 {
@@ -54,6 +54,8 @@ implemented background-size,repeat and attachment settings
   align-items: center;
 }
 
+/* Scroll settings */
+
 .slider {
   display: flex;
   overflow-x: scroll;
@@ -88,11 +90,16 @@ implemented background-size,repeat and attachment settings
   margin-top: 20px;
 }
 
-/* ------------------------------------------------------------------------------------- */
+/*Hover overlay  ------------------------------------------------------------------------------------- */
 /* .image {
   position: relative;
   width: 900px;
 } */
+
+.slide {
+  display: block;
+  width: 100%;
+}
 
 .image-wrapper {
   position: relative;
@@ -157,29 +164,3 @@ implemented background-size,repeat and attachment settings
 } */
 
 /* --------------------------------------------------------------------------------------------- */
-
-/* image slider buttons -----------------------------------------------------------------------*/
-
-/* .buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.prev,
-.next {
-  width: 100px;
-  height: 50px;
-  font-size: 1em;
-  border: none;
-  border-radius: 10px;
-
-}
-
-
-.prev:hover,
-.next:hover {
-  background-color: coral;
-} */
-
-/* -------------------------------------------------------------------------------------------- */
