@@ -47,6 +47,8 @@ body {
   margin-left: 130px;
 } */
 
+/* -------------------------------- */
+
 .image {
   position: relative;
   width: 800px;
@@ -54,12 +56,12 @@ body {
   align-items: center;
 }
 
-.image__img {
+.image-img {
   display: block;
   width: 100%;
 }
 
-.image__overlay {
+.image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,11 +77,11 @@ body {
   opacity: 0;
 }
 
-.image__overlay:hover {
+.image-overlay:hover {
   opacity: 1;
 }
 
-.image__title {
+.image-title {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -89,6 +91,7 @@ body {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  margin-top: 100px;
 }
 
 .image {
